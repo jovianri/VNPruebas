@@ -1,16 +1,32 @@
 <div class="content" role="main">
-    <p>{{titulo}}</p>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">{{tituloPeso}}</span>
-        <input type="number" class="form-control" [(ngModel)]="nPeso" placeholder="{{medidaPeso}}" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">{{tituloAltura}}</span>
-        <input type="number" class="form-control" [(ngModel)]="nAltura" placeholder="{{medidaAltura}}" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <button (click)="calcularImc()" class="btn btn-primary">{{tituloBoton}}</button>
-    <div *ngIf="sImc!='' && nImc>0">
-        <p>IMC es {{nImc}}, su estado es {{sImc}}</p>
-        <img alt="imagen resultado" [src]="iImc">
-    </div>
+  <p>{{ titulo }}</p>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">{{ tituloPeso }}</span>
+    <input
+      type="number"
+      class="form-control"
+      [(ngModel)]="nPeso"
+      placeholder="{{ medidaPeso }}"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">{{ tituloAltura }}</span>
+    <input
+      type="number"
+      class="form-control"
+      [(ngModel)]="nAltura"
+      placeholder="{{ medidaAltura }}"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+  </div>
+  <button (click)="calcularImc()" class="btn btn-primary">
+    {{ tituloBoton }}
+  </button>
+  <div *ngIf="sImc != '' && nImc > 0">
+    <p>IMC es {{ nImc }}, su estado es {{ sImc }}</p>
+    <img alt="imagen resultado" [src]="iImc" />
+  </div>
 </div>

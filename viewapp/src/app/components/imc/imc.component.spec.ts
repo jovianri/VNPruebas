@@ -8,9 +8,8 @@ describe('ImcComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImcComponent ]
-    })
-    .compileComponents();
+      declarations: [ImcComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

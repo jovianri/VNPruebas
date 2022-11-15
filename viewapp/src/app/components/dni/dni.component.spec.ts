@@ -8,9 +8,8 @@ describe('DniComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DniComponent ]
-    })
-    .compileComponents();
+      declarations: [DniComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

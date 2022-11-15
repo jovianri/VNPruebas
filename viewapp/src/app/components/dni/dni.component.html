@@ -1,9 +1,18 @@
 <div class="content" role="main">
-    <p>{{titulo}}</p>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">DNI</span>
-        <input type="number" class="form-control" [(ngModel)]="nDni" placeholder="{{ tituloDni }}" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <button (click)="calcularLetraDni()" class="btn btn-primary">{{ tituloBoton }}</button>
-    <div *ngIf="sDni!=''">{{ sDni }}</div>
+  <p>{{ titulo }}</p>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">DNI</span>
+    <input
+      type="number"
+      class="form-control"
+      [(ngModel)]="nDni"
+      placeholder="{{ tituloDni }}"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+  </div>
+  <button (click)="calcularLetraDni()" class="btn btn-primary">
+    {{ tituloBoton }}
+  </button>
+  <div *ngIf="sDni != ''">{{ sDni }}</div>
 </div>

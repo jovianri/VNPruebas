@@ -1,7 +1,9 @@
-<p>dni works!</p>
-
-<form>
-    <input type="text" placeholder="{{ tituloDni }}" id="fname" name="fname" value="" [(ngModel)]="nDni"><br><br>
-    <button (click)="calcularLetraDni()">{{ tituloBoton }}</button>
-    <p>{{ sDni }}</p>
-</form>
+<div class="content" role="main">
+    <p>{{titulo}}</p>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">DNI</span>
+        <input type="number" class="form-control" [(ngModel)]="nDni" placeholder="{{ tituloDni }}" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <button (click)="calcularLetraDni()" class="btn btn-primary">{{ tituloBoton }}</button>
+    <div *ngIf="sDni!=''">{{ sDni }}</div>
+</div>

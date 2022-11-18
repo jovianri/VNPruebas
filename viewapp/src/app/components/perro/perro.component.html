@@ -1,6 +1,9 @@
 <p>perro works!</p>
 <div *ngIf="perro_recibido!=null">
     <img alt="perrorecibido" [src]="perro_recibido.message">
+    <p>Raza: {{raza}}</p>
+    <p>Raza Mayúsculas: {{raza|uppercase}}</p><!--PIPE FORMATEADOR-->
+     PERRO JSON = {{perro_recibido|json}}
 </div>
 <div *ngIf="perro_recibido==null">
     NO TENEMOS PERRO

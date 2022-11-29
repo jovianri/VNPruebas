@@ -1,0 +1,4 @@
+<!-- <ul class="list-group">
+    <li>{{lista_alumnos|json}}</li>
+</ul> -->
+<a (click)="alumnoTocado(verAlumno)" *ngFor="let verAlumno of lista_alumnos">{{verAlumno.nombre}}, {{verAlumno.apellido}}</a>
